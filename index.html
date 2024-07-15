@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <title>Arzu Ece Aydemir's Portfolio</title>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Arzu Ece Aydemir</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Arzu Ece Aydemir</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="menu-links">
+          <li><a href="#" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ai-profile-pic-removebg-preview (1).png" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Arzu Ece Aydemir</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button>
+            <a href="https://www.linkedin.com/in/arzueceaydemir/"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </button>
+          <button>
+            <a href="https://github.com/ArzuEceAy"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="section__text__p2">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/snake.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Snake Game</h2>
+            <div class="btn-container">
+              <button>
+                <a href="https://github.com/ArzuEceAy"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </button>
+              <button>
+                <a href="#snake-game">Live Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/pixel-art-game.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Pixel Art Maker</h2>
+            <div class="btn-container">
+              <button>
+                <a href="https://github.com/ArzuEceAy"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </button>
+              <button>
+                <a href="https://github.com/ArzuEceAy">Live Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/snake.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button>
+                <a href="https://github.com/ArzuEceAy"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </button>
+              <button>
+                <a href="https://github.com/ArzuEceAy">Live Demo</a>
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="assets/snake.png" alt="" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button>
+                <a href="https://github.com/ArzuEceAy"
+                  ><i class="fa-brands fa-github"></i> Github</a
+                >
+              </button>
+              <button>
+                <a href="https://github.com/ArzuEceAy">Live Demo</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="section__text__p2">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:arzueceaydemir@gmail.com"
+            ><i class="fa-solid fa-envelope fa-xl"></i>
+            Arzueceaydemir@gmail.com</a
+          >
+
+          <!-- <div>
+            <a href="https://www.linkedin.com/in/arzueceaydemir/"
+              ><i class="fa-brands fa-linkedin-in fa-xl"></i> LinkedIn</a
+            >
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Copyright &#169; 2024 Arzu Ece Aydemir. All Rights Reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

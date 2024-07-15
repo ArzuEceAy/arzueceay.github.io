@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  animation-timing-function: linear;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(53, 110, 112);
+  /* text-decoration: wavy underline; */
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgb(245, 137, 49);
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon i {
+  font-size: 2rem;
+  transition: all 300ms ease;
+}
+
+.menu-links {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+  margin-top: 10px;
+}
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.title {
+  font-family: 'Parisienne', cursive;
+  font-size: 3rem;
+  text-wrap: nowrap;
+  text-align: center;
+  color: rgb(22, 22, 23);
+}
+
+.section-container {
+  display: flex;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 60vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  margin: auto 0;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+  color: rgb(90, 90, 90);
+}
+
+.section__text__p1 {
+  color: rgb(90, 90, 90);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.btn-container {
+  margin-top: 1.5rem;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 300ms ease;
+  margin: 0 0.5rem;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:hover a {
+  color: black;
+}
+
+#projects {
+  position: relative;
+  height: 70vh;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.color-container {
+  border-color: rgb(230, 228, 228);
+  background: rgb(250, 250, 250);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.about-containers {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+#projects button {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border-color: rgb(230, 228, 228);
+  background: rgb(250, 250, 250);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+footer {
+  margin: 50px 0;
+}
+
+footer p {
+  text-align: center;
+  margin-bottom: 20px;
+}
